@@ -1,0 +1,18 @@
+.cartWidget {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cartWidget p {
+  border-radius: 50px;
+  background-color: pink;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.icon_cartWidget {
+  position: relative;
+}
