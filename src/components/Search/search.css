@@ -1,5 +1,16 @@
-.search {
-  height: 25px;
+.search_input {
   width: 300px;
-  border-radius: 48px;
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid pink;
+}
+
+.search {
+  position: relative;
+}
+.search_img {
+  border-left: 2px solid #fadadd;
+  position: absolute;
+  right: 10px;
+  top: 4px;
 }
