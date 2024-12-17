@@ -1,21 +1,17 @@
-import { Search } from "../Search/Search";
 import "./banner.css";
-import banner from "../../assets/banner_Pinky_Pink_Cosmetics.jpg";
+import flowers from "../../assets/flowersSearch.png";
 
 export const Banner = () => {
   return (
     <div className="container_banner">
       <div className="banner_img">
-        <div className="search">
-          <Search />
-        </div>
         <img
-          src={banner}
+          src={flowers}
           alt="Banner promocional de Pinky Pink Cosmetics"
           style={{
-            opacity: 0.3,
+            opacity: 0.7,
             width: "100%",
-            height: "300px",
+            height: "400px",
           }}
         />
       </div>

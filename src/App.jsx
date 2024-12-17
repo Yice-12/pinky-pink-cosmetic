@@ -1,13 +1,11 @@
 import { Navbar } from "./components/Navbar";
-import { Banner } from "./components/Banner";
-import { ProductList } from "./components/ProductList/ProductList";
+import { AppRoutes } from "./routes/AppRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Banner />
-      <ProductList />
+      <AppRoutes />
     </>
   );
 }

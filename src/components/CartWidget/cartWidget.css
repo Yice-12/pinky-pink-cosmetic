@@ -2,6 +2,11 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  position: relative;
+}
+.cartWidget img {
+  border-radius: 50px;
+  border: 1px solid pink;
 }
 
 .cartWidget p {
@@ -9,10 +14,7 @@
   background-color: pink;
   padding: 5px;
   position: absolute;
-  top: 0;
-  right: 10px;
-}
-
-.icon_cartWidget {
-  position: relative;
+  top: -5px;
+  right: -10px;
+  margin: 0;
 }

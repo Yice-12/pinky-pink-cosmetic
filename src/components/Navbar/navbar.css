@@ -12,3 +12,6 @@
   display: flex;
   gap: 8px;
 }
+.navbar_logo img {
+  border-radius: 50px;
+}

@@ -1,32 +1,34 @@
 import "./navbar.css";
 import eyelash from "../../assets/eyelash.jpg";
 import { CartWidget } from "../CartWidget/CartWidget";
+import { useNavigate } from "react-router-dom";
 
 const categories = [
-  "Accesorios",
-  "Brochas",
-  "Cejas",
-  "Corporal",
-  "Cuidado Capilar",
-  "Cuidado de Piel",
-  "Labios",
-  "Ojos",
-  "Piel",
-  "Hombre",
-  "Nueva Colección",
-  "Promociones",
+  { id: "pencil", name: "Lapices de ojos" },
+  { id: "cream", name: "Crema" },
+  { id: "lipstick", name: "Lapiz labial" },
+  { id: "powder", name: "Polvo" },
+  { id: "Lip gloss ", name: "Brillo de labios" },
+  { id: "Highlighter", name: "Iluminador" },
+  { id: "Contour", name: "Contorno" },
 ];
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
-      <div className="navbar_logo">
+      <div className="navbar_logo" onClick={() => navigate("/")}>
         <img src={eyelash} width={50} />
-        <p>Pinky pink consmetic</p>
+        <p>Pinky pink cosmetic</p>
       </div>
 
-      {categories.map((category, i) => (
-        <li key={i}>{category}</li>
+      {categories.map((category) => (
+        <li
+          onClick={() => navigate(`/category/${category.id}`)}
+          key={category.id}
+        >
+          {category.name}
+        </li>
       ))}
       <CartWidget />
     </nav>
