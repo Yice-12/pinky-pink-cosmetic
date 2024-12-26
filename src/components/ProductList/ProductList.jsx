@@ -13,7 +13,7 @@ const ProductList = ({ products }) => {
     try {
       setloading(true);
       const response = await fetch(
-        "http://makeup-api.herokuapp.com/api/v1/products.json"
+        "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
       );
 
       if (!response.ok) throw new Error("No hay productos");

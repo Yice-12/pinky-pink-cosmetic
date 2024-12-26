@@ -13,7 +13,7 @@ export const ProductDetail = () => {
     try {
       setloading(true);
       const response = await fetch(
-        `http://makeup-api.herokuapp.com/api/v1/products/${idProduct}.json`
+        `https://makeup-api.herokuapp.com/api/v1/products/${idProduct}.json`
       );
 
       if (!response.ok) throw new Error("No hay productos");

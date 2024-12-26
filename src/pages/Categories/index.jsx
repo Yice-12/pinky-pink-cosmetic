@@ -13,7 +13,7 @@ export const Categories = () => {
     try {
       setloading(true);
       const response = await fetch(
-        `http://makeup-api.herokuapp.com/api/v1/products.json?product_category=${idCategory}`
+        `https://makeup-api.herokuapp.com/api/v1/products.json?product_category=${idCategory}`
       );
 
       if (!response.ok) throw new Error("No hay productos");
