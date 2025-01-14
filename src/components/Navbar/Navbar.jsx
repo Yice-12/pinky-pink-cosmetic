@@ -2,8 +2,6 @@ import "./navbar.css";
 import eyelash from "../../assets/eyelash.jpg";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { useNavigate } from "react-router-dom";
-import { ModalProduct } from "../ModalProduct/ModalProduct";
-import { useState } from "react";
 
 const categories = [
   { id: "pencil", name: "Lapices de ojos" },
@@ -27,12 +25,12 @@ export const Navbar = () => {
         </div>
 
         {categories.map((category) => (
-          <li
+          <div
             onClick={() => navigate(`/category/${category.id}`)}
             key={category.id}
           >
             {category.name}
-          </li>
+          </div>
         ))}
         <CartWidget />
       </nav>

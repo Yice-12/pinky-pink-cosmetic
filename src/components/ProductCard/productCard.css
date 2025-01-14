@@ -23,3 +23,18 @@
   overflow: hidden; 
   text-overflow: ellipsis; /
 }
+
+.container_button_add{
+  display: flex;
+  justify-content: center;
+
+}
+.button_add-product{
+  all: unset;
+  background: pink;
+  border-radius: 5px;
+  padding: 8px;
+  color: green;
+  font-weight: bold;
+
+}

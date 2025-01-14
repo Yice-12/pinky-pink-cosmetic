@@ -13,3 +13,36 @@
 .information_product {
   flex: 1;
 }
+.quantity {
+  width: min-content;
+  height: 30px;
+  border-radius: 64px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22.4px;
+  padding: 0px 10px;
+}
+
+.button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+.quantity-number {
+  font-size: 14px;
+  font-weight: 600;
+}
+.vertical {
+  position: absolute;
+}
+
+.container-quantity {
+  display: flex;
+  gap: 63px;
+}

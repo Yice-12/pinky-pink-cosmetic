@@ -25,11 +25,15 @@ export const ProductCard = ({ product }) => {
           <h1>{product.name}</h1>
           <p className="description">{product.description}</p>
           <p>{product.price}</p>
-          <div>
+          <div className="container_button_add">
             <button
+              className="button_add-product"
               onClick={(e) => {
                 e.stopPropagation();
-                dispatch({ type: ADD_CART, payload: product });
+                dispatch({
+                  type: ADD_CART,
+                  payload: { ...product, quantity: 1 },
+                });
                 setOpenModal(true);
               }}
             >

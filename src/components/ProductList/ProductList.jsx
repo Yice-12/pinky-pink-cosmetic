@@ -4,25 +4,17 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../../Provider/Provider";
 import { SET_PRODUCTS } from "../../reducers/types";
 import { hocFilterProducts } from "../../hoc/hocFilterProducts";
+import { fetchProducts } from "../../utils/fetchApi";
 
 const ProductList = ({ products }) => {
-  const { dispatch, state } = useContext(Context);
+  const { dispatch } = useContext(Context);
   const [loading, setloading] = useState(false);
 
   const cosmeticProducts = async () => {
-    try {
-      setloading(true);
-      const response = await fetch(
-        "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
-      );
-
-      if (!response.ok) throw new Error("No hay productos");
-      const res = await response.json();
-      dispatch({ type: SET_PRODUCTS, payload: res });
-      setloading(false);
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
+    setloading(true);
+    const response = await fetchProducts();
+    dispatch({ type: SET_PRODUCTS, payload: response });
+    setloading(false);
   };
 
   useEffect(() => {
@@ -36,9 +28,7 @@ const ProductList = ({ products }) => {
   return (
     <div className="product_list">
       {products.map((product) => (
-        <>
-          <ProductCard key={product.id} product={product} />
-        </>
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );

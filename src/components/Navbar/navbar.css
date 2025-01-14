@@ -7,6 +7,8 @@
   align-items: center;
   cursor: pointer;
   justify-content: space-around;
+  color: green;
+  font-weight: bold;
 }
 .navbar_logo {
   display: flex;
