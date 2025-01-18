@@ -43,7 +43,7 @@ export const ModalProduct = ({ openModal, closeModal }) => {
                   </div>
                 ))}
               </div>
-              <div>
+              <div className="link-buy">
                 <Link to="/checkout">Continuar con mi compra</Link>
               </div>
 

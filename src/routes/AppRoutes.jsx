@@ -4,7 +4,7 @@ import React from "react";
 import { Home } from "../pages/Home";
 import { ProductDetail } from "../pages/ProductDetail/ProductDetail";
 import { Categories } from "../pages/Categories";
-import { Checkout } from "../components/Chekout/Checkout";
+import { Checkout } from "../pages/Chekout/Checkout";
 
 export const AppRoutes = () => {
   return (
