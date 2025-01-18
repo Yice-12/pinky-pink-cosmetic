@@ -1,4 +1,4 @@
-import "./modalProduct.css";
+import "./modalproduct.css";
 import close from "../../assets/close.svg";
 import { useContext } from "react";
 import { Context } from "../../Provider/Provider";
