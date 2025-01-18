@@ -14,7 +14,10 @@
   height: 200px;
 }
 .content{
+  display: flex;
+  flex-direction: column;
   padding: 0px 10px;
+  height: 100%;
 }
 .description {
   display: -webkit-box;
@@ -26,11 +29,15 @@
 
 .container_button_add{
   display: flex;
+  flex: 1;
+  align-items: flex-end;
   justify-content: center;
 
 }
 .button_add-product{
   all: unset;
+  text-align: center;
+  width: 100%;
   background: pink;
   border-radius: 5px;
   padding: 8px;

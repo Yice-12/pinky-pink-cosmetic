@@ -43,6 +43,10 @@ export const ModalProduct = ({ openModal, closeModal }) => {
                   </div>
                 ))}
               </div>
+              <div>
+                <Link to="/checkout">Continuar con mi compra</Link>
+              </div>
+
               <div className="total">
                 <h2>
                   Total del carrito: $

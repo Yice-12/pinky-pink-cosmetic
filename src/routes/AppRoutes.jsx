@@ -4,6 +4,7 @@ import React from "react";
 import { Home } from "../pages/Home";
 import { ProductDetail } from "../pages/ProductDetail/ProductDetail";
 import { Categories } from "../pages/Categories";
+import { Checkout } from "../components/Chekout/Checkout";
 
 export const AppRoutes = () => {
   return (
@@ -11,6 +12,7 @@ export const AppRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/productDetail/:idProduct" element={<ProductDetail />} />
       <Route path="/category/:idCategory" element={<Categories />} />
+      <Route path="/checkout" element={<Checkout />} />
       <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );

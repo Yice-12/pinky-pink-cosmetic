@@ -12,6 +12,7 @@
 }
 .navbar_logo {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 .navbar_logo img {

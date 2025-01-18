@@ -1,6 +1,7 @@
 import {
   ADD_CART,
   DELETED_PRODUCT,
+  RESET_CART,
   SET_CATEGORIES,
   SET_PRODUCT,
   SET_PRODUCTS,
@@ -38,6 +39,8 @@ export const reducer = (state, action) => {
         ...state,
         cart: deletedProduct,
       };
+    case RESET_CART:
+      return { ...state, cart: [] };
 
     default:
       return state;

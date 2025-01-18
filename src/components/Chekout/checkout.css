@@ -1,0 +1,43 @@
+.container-form {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: max-content;
+  border: 1px solid pink;
+  padding: 16px;
+  border-radius: 10px;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form div label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.form div input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid green;
+}
+.form div input::placeholder {
+  font-size: 12px;
+}
+.button-submit {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: pink;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}

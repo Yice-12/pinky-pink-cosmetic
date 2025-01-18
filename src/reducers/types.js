@@ -3,3 +3,4 @@ export const SET_PRODUCTS = "SET_PRODUCTS";
 export const SET_PRODUCT = "SET_PRODUCT";
 export const SET_CATEGORIES = "SET_CATEGORIES";
 export const DELETED_PRODUCT = "DELETED_PRODUCT";
+export const RESET_CART = "RESET_CART";
